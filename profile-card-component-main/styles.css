@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-blue: hsl(229, 23%, 23%);
+    --Grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;  
+    background-color: var(--Dark-cyan);
+}
+
+.top-bg{
+    background-image: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 978px;
+    height: 978px;
+    position: absolute;
+    top: -528px;
+    left: -248px;
+}
+
+.bottom-bg{
+    background-image: url(./images/bg-pattern-bottom.svg);
+    width: 978px;
+    height: 978px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -628px;
+    right: -250px;
+}
+
+.container{
+    background-color: white;
+    width: 350px;
+    height: 350px;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 40%;
+    border-radius: 1rem 1rem 0 0;
+    background-image: url(./images/bg-pattern-card.svg);
+}
+
+.main{
+    padding: 2rem;
+    text-align: center;
+    height: 40%;
+}
+
+.name{
+    color: var(--Very-dark-blue);
+    font-size: 18px;
+}
+
+.avatar{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    border: 4px solid white;
+}
+
+.avatar-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: 18px;
+    margin-top: 2rem;
+    color: var(--Grayish-blue);
+}
+
+.main p{
+    color: var(--Grayish-blue);
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    border: .5px solid var(--Dark-gray);
+}
+
+.footer{
+    height: 20%;
+}
+
+.stats{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.stats h2{
+    font-size: 18px;
+    color: var(--Very-dark-blue);
+}
+
+.stats p{
+    color: var(--Dark-gray);
+    font-size: 10px;
+    letter-spacing: .2rem;
+}
